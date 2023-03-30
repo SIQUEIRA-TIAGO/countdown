@@ -8,6 +8,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .topImg {
@@ -110,3 +112,11 @@ input {
     pointer-events: none;
     bottom: 0;
 }
+
+.developer {
+    color: #4D4C59;
+    opacity: 50%;
+    font-size: 10px;
+    position: fixed;
+    bottom: 10px;
+  }
