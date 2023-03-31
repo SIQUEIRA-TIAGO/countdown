@@ -31,3 +31,20 @@ setInterval(() => {
 
   document.getElementById('seconds').value = zeroLeft(Math.floor((distance % (1000 * 60)) / 1000))
 }, 1000)
+
+// 
+const modal = document.getElementById("subModal");
+
+document.getElementById("modalBtn").addEventListener('click', () => {
+    modal.style.display = "block";
+});
+
+document.getElementsByClassName("close")[0].addEventListener('click', () => {
+  modal.style.display = "none";
+});
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

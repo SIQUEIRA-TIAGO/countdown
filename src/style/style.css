@@ -91,7 +91,7 @@ input {
     color: #9C9AB6
 }
 
-.sub .subBtn {
+.sub #modalBtn {
     margin-top: 31px;
     font-size: 16px;
     color: #fff;
@@ -102,7 +102,7 @@ input {
     border-radius: 10px;
 }
 
-.sub .subBtn:hover {
+.sub #modalBtn:hover {
     cursor: pointer;
     box-shadow: #4D4C59 3px 3px;
 }
@@ -119,4 +119,109 @@ input {
     font-size: 10px;
     position: fixed;
     bottom: 10px;
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    border: 1px solid #6C63FF;
+    border-radius: 15px;
+    width: 550px;
+    height: 375px;
+    display: flex;
+  }
+  
+  .close {
+    margin-right: 10px;
+    color: #4D4C59;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #111;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .leftSide {
+    border-radius: 15px 0 0 15px;
+    background-image: linear-gradient(to bottom, #6C63FF, #4a42db);
+    width: 50%;
+  }
+
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .rightContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .modalTitle {
+    margin-top: 10px;
+    color: #4D4C59;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .modalText {
+    color: #4D4C59;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  .inputEmail {
+    height: 30px;
+    width: 100%;
+    padding-left: 5px;
+    border-bottom: #4D4C59 solid 1px;
+    margin-top: 50px;
+  }
+  .inputEmail:focus {
+    border: none;
+    border-bottom: #4D4C59 solid 1px;
+  }
+
+  .subBtn {
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6C63FF;
+    height: 46px;
+    width: 250px;
+    border: none;
+    border-radius: 23px;
   }

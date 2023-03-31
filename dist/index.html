@@ -35,13 +35,31 @@
             </div>
             <div class="sub">
                 <p class="subText">Inscreva-se para saber mais sobre o lançamento</p>
-                <button class="subBtn">Inscrever-se</button>
+                <button id="modalBtn">Inscrever-se</button>
             </div>
         </section>
-        <img src="./assets/rocket.svg" alt="rocket">
+        <img src="./assets/rocket.svg" alt="rocket" style="width:auto; height: auto;">
     </div>
     <p class="developer">Developed by <strong>Tiago Siqueira de Oliveira</strong></p>
     <img class='botImg'src="./assets/bottom-image.svg" alt="">
+
+    <!-- Modal -->
+    <div id="subModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="leftSide"></div>
+            <div class="rightSide">
+                <span class="close">&times;</span>
+                <div class="rightContent"><h3 class="modalTitle">Inscreva-se</h3>
+                    <span class="modalText">Para manter-se atualizado com nosso boletim informativo.</span>
+                    <form action="">
+                        <input required type="email" class="inputEmail" placeholder="Endereço de Email">
+                        <button class="subBtn" type="submit">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
     <script src="../src/index.js"></script>
 </body>
 </html>
