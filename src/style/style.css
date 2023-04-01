@@ -281,10 +281,11 @@ form {
       font-size: 12px;
     }
     .rocket {
-      width: 230px;
+      width: 300px;
     }
     .container {
-      gap: auto;
+      flex-direction: column-reverse;
+      gap: 25px;
     }
     .modal-content {
       flex-direction: column-reverse;
