@@ -27,9 +27,11 @@ body {
 
 /*  */
 .container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  margin: 15px auto;
+    min-height: 100vh;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
 }
@@ -141,7 +143,7 @@ input {
     border: 1px solid #6C63FF;
     border-radius: 15px;
     width: 550px;
-    height: 375px;
+    min-height: 375px;
     display: flex;
   }
   
@@ -224,4 +226,85 @@ form {
     width: 250px;
     border: none;
     border-radius: 23px;
+  }
+
+  @media (max-width: 1250px) {
+    .time {
+      font-size: 40px;
+    }
+    .title {
+      font-size: 22px;
+    }
+    input {
+      width: 43px;
+    }
+    .countdown {
+      width: 360px;
+    }
+    .sub .subText {
+      font-size: 12px;
+    }
+    .rocket {
+      width: 550px;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .time {
+      font-size: 40px;
+    }
+    .title {
+      font-size: 18px;
+    }
+    .text {
+      font-size: 10px;
+    }
+    input {
+      width: 43px;
+    }
+    .countdown {
+      width: 300px;
+    }
+    .sub .subText {
+      font-size: 12px;
+    }
+    .rocket {
+      width: 300px;
+    }
+    .container {
+      gap: 5px;
+    }
+  }
+
+  @media (max-width: 610px) {
+    .sub .subText {
+      font-size: 12px;
+    }
+    .rocket {
+      width: 230px;
+    }
+    .container {
+      gap: auto;
+    }
+    .modal-content {
+      flex-direction: column-reverse;
+      width: 300px;
+    }
+    .leftSide {
+      border-radius: 0 0 15px 15px;
+      width: 100%;
+      height: 100px;
+      margin-top: 10px;
+    }
+    .rightContent {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .modalTitle {
+      text-align: center;
+      font-size: 35px;
+    }
+    .modalText {
+      text-align: center;
+    }
   }
